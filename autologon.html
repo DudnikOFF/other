@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>getToPost</title>
+        <script>
+            function getToPost()
+            {
+                var form = document.getElementsByTagName('form')[0];
+				var search = decodeURIComponent(document.location.search);
+                form.style.visibility = 'hidden';
+                form.action = 'https://'+search.substr(1).split('&')+'/cgi/lct.cgi';
+				
+					input = document.createElement('input');
+					input.name = 'CGI_ID';
+                    input.value = 'GET_LCT01000000_01';
+					form.appendChild(input);
+              
+                
+                    input = document.createElement('input');
+					input.name = 'userName';
+                    input.value = 'Admin';
+					form.appendChild(input);
+					
+					input = document.createElement('input');
+					input.name = 'password';
+                    input.value = '12345678';
+                    form.appendChild(input);
+                
+                form.submit();
+            }
+        </script>
+    </head>
+    <body onload="getToPost()">
+        <form method="POST"></form>
+    </body>
+</html>
