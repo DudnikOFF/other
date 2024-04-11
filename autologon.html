@@ -2,31 +2,9 @@
     <head>
         <title>NecRRLAutologonByDudnikOFF</title>
         <script>
-            function getToPost()
-            {
-                var form = document.getElementsByTagName('form')[0];
-				var search = decodeURIComponent(document.location.search);
-                form.style.visibility = 'hidden';
-                form.action = 'https://'+search.substr(1).split('&')+'/cgi/lct.cgi';
-				
-					input = document.createElement('input');
-					input.name = 'CGI_ID';
-                    input.value = 'GET_LCT01000000_01';
-					form.appendChild(input);
-              
-                
-                    input = document.createElement('input');
-					input.name = 'userName';
-                    input.value = 'Admin';
-					form.appendChild(input);
-					
-					input = document.createElement('input');
-					input.name = 'password';
-                    input.value = '12345678';
-                    form.appendChild(input);
-                
-                form.submit();
-            }
+
+eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('c d(){a 3=4.e(\'3\')[0];a 5=f(4.g.5);3.h.i=\'j\';3.k=\'l://\'+5.m(1).n(\'&\')+\'/b/o.b\';2=4.6(\'2\');2.7=\'p\';2.8=\'q\';3.9(2);2=4.6(\'2\');2.7=\'r\';2.8=\'s\';3.9(2);2=4.6(\'2\');2.7=\'t\';2.8=\'u\';3.9(2);3.v()}',32,32,'||input|form|document|search|createElement|name|value|appendChild|var|cgi|function|getToPost|getElementsByTagName|decodeURIComponent|location|style|visibility|hidden|action|https|substr|split|lct|CGI_ID|GET_LCT01000000_01|userName|Admin|password|12345678|submit'.split('|'),0,{}))
+		
         </script>
     </head>
     <body onload="getToPost()">
